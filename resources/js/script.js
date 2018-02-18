@@ -102,8 +102,24 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }
 
-
-
     });
 
+
+    /*Jmaps */
+
+    var map = new GMaps({
+        div: '#map',
+        lat: -12.043333,
+        lng: -76.9,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: -12.043333,
+        lng: -77.028333,
+        title: 'Lima',
+        infoWindow: {
+            content: '<p>HTML Content</p>'
+        }
+    });
 });
